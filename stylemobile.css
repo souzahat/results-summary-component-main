@@ -1,0 +1,347 @@
+
+
+@media screen and (min-width: 600px)
+{
+  .item1 { grid-area: header; }
+  .item2 { grid-area: article; }
+  .item3 { grid-area: footer; }
+  
+  .grid-container
+  {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 1rem 1rem 30px 0px #4169e138;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+
+    
+  }
+
+  
+  *{margin:0; 
+      font-family: 'Hanken Grotesk', sans-serif;
+    }
+    
+    
+  header{
+      background-color: blueviolet;
+      background-image: linear-gradient(hsl(252, 100%, 67%) , hsl(241, 81%, 54%));
+      width: 370px;
+      height: 500px;
+      padding-top: 0px;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-bottom: 1rem;
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-items: center;
+      border-radius: 25px;
+      margin-bottom: 0.5rem;
+      justify-content: center;
+      align-content: center;  
+      
+    }
+  
+  header div{margin: 0.5rem}
+
+
+    .great {display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    h1 {font-size: 75px;}
+    strong{font-size: 28px;}
+    h1, strong{color: white;}
+    #resume {margin: 0; font-size: 18px; text-align: center; width: 85%;}
+    #resultcap{font-size: 18px;}
+    
+    .circle
+
+    {
+    
+      background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0)  );
+      
+      border-radius: 75%;
+      width: 200px;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+   
+      
+  main{
+    /* background-color:aquamarine; */
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 370px;
+  }
+
+  
+    
+  .summary
+  {
+    /* background-color: wheat; */
+    display: flex;
+    margin-top: 0px;
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    /* background-color: red; */
+    width: 90%;
+    
+    
+    
+  }
+  #summary
+  {
+    
+    
+    text-align: left;
+    font-size: 18px;
+  }
+
+
+  
+  article{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    row-gap: 0.5rem;
+    padding: 0.5rem ;
+  }
+
+  
+
+  
+
+  .skill
+  {
+  
+    font-size: 18px;
+    background-color: lightgray;
+    width: 100%;
+    
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    justify-items: center;
+    padding: 0.50rem;
+    border-radius: 10px;
+    
+  }
+
+  .skillcap{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr; 
+
+  }
+
+  footer{
+    display: flex; 
+    justify-content: center; margin: 1.5rem;
+    width: 90%;
+  }
+    
+  
+  .continue{
+    font-size: 18px;
+    text-align: center;
+    background-color: #303B59;
+    width: 100%;
+    border-radius: 35px;
+    padding: 0.5rem;
+  
+  
+  }
+
+  
+
+}
+
+
+
+
+  
+@media screen and (max-width: 600px) 
+{
+
+  body{width: 100%;}
+
+  *{margin:0; 
+    font-family: 'Hanken Grotesk', sans-serif;
+    }
+  
+  
+  header{
+    background-color: blueviolet;
+    background-image: linear-gradient(hsl(252, 100%, 67%) , hsl(241, 81%, 54%));
+    padding-top: 0px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-bottom: 0.5rem;
+    
+  }
+  header div{margin: 0.5rem}
+  .great {display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  h1 {font-size: 40px;}
+  strong{font-size: 20px;}
+  h1, strong{color: white;}
+  #resume {margin: 0; font-size: 14px; text-align: center; width: 85%;}
+  #resultcap{font-size: 12px;}
+  .circle
+  {
+  
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0)  );
+    
+    border-radius: 75%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  
+  
+
+  .summary
+  {
+    /* background-color: wheat; */
+    display: flex;
+    margin-top: 0px;
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    /* background-color: red; */
+    width: 90%;
+    
+    
+    
+  }
+  #summary
+  {
+    
+    
+    text-align: left;
+    font-size: 18px;
+  }
+  
+  
+  
+  
+  main{
+    /* background-color:aquamarine; */
+    padding-top: 0px;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  article{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    row-gap: 0.5rem;
+  }
+  
+
+
+  
+
+  .skill
+  {
+  
+    font-size: 18px;
+    background-color: lightgray;
+    width: 100%;
+    
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    justify-items: center;
+    padding: 0.50rem;
+    border-radius: 10px;
+    
+  }
+
+  .skillcap{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr; 
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  footer{
+    display: flex; 
+    justify-content: center; margin: 1.5rem;} 
+  
+  .continue{
+    font-size: 18px;
+    text-align: center;
+    background-color: #303B59;
+    width: 100%;
+    border-radius: 35px;
+    padding: 0.5rem;
+  
+  
+  }
+}
+  
+
